@@ -1,0 +1,79 @@
+{
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "internalType": "int256[]",
+          "name": "ns",
+          "type": "int256[]"
+        }
+      ],
+      "name": "PlusArray",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "PlusOne",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "internalType": "int256",
+          "name": "x",
+          "type": "int256"
+        }
+      ],
+      "name": "PlusX",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "internalType": "int256",
+          "name": "x",
+          "type": "int256"
+        },
+        {
+          "internalType": "int256",
+          "name": "y",
+          "type": "int256"
+        }
+      ],
+      "name": "PlusXY",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "sum",
+      "outputs": [
+        {
+          "internalType": "int256",
+          "name": "",
+          "type": "int256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x608060405234801561001057600080fd5b50610248806100206000396000f3fe608060405234801561001057600080fd5b50600436106100575760003560e01c8063286f4cbf1461005c57806379adfd3c1461008a578063853255cc146100c257806396e94329146100e0578063a0293e6714610198575b600080fd5b6100886004803603602081101561007257600080fd5b81019080803590602001909291905050506101a2565b005b6100c0600480360360408110156100a057600080fd5b8101908080359060200190929190803590602001909291905050506101b0565b005b6100ca6101c1565b6040518082815260200191505060405180910390f35b610196600480360360208110156100f657600080fd5b810190808035906020019064010000000081111561011357600080fd5b82018360208201111561012557600080fd5b8035906020019184602083028401116401000000008311171561014757600080fd5b919080806020026020016040519081016040528093929190818152602001838360200280828437600081840152601f19601f8201169050808301925050505050505091929192905050506101c7565b005b6101a0610205565b005b806000540160008190555050565b808201600054016000819055505050565b60005481565b60008090505b8151811015610201578181815181106101e257fe5b60200260200101516000540160008190555080806001019150506101cd565b5050565b60016000540160008190555056fea265627a7a72315820a655767039d748106bb57f15891dac4c2d71080b2e8b44f8b3b8ff0aa490bb9264736f6c63430005110032"
+}
