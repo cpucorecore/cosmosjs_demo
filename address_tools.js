@@ -10,6 +10,19 @@ function AddressBytesFromBech32(bech32Addr) {
     return convertBits(res.words, 5, 8, false);
 }
 
+function ConvertToDipAddress(eip55Address) {
+    const words = convertBits(hex2a(eip55Address), 8, 5, false);
+    return bech32.encode('dip', words);
+}
+
+function hex2a(hex) {
+    let a = [];
+    if (hex.length <=2) return a
+    if (hex[0] == '0' && (hex[1] == 'x' || hex[1] == 'X')) hex = hex.slice(2);
+    for (let i = 0; i < hex.length; i += 2) a.push(parseInt(hex.substr(i, 2), 16));
+    return a;
+}
+
 function convertBits(data, fromBits, toBits, padding) {
     let acc = 0
     let bits = 0
@@ -37,4 +50,4 @@ function convertBits(data, fromBits, toBits, padding) {
     return Buffer.from(result)
 }
 
-module.exports = { Eip55AddressFromBech32Address, AddressBytesFromBech32, convertBits }
+module.exports = { ConvertToDipAddress, Eip55AddressFromBech32Address, AddressBytesFromBech32, convertBits }

@@ -2,6 +2,7 @@ const cosmosjs = require("@cosmostation/cosmosjs");
 const contractB = require('./contracts/contractB.json');
 const Web3 = require('web3');
 const axios = require('axios');
+const addressTools = require('./address_tools');
 
 const url = 'http://localhost:1317';
 const queryAPI = 'http://localhost:1317/vm/estimate_gas'
@@ -37,6 +38,7 @@ axios.post(queryAPI, msg)
         console.log(res.data.result.Res);
         const decodedRes = web3.eth.abi.decodeParameter('address', res.data.result.Res);
         console.log(decodedRes);
+        console.log(addressTools.ConvertToDipAddress(decodedRes));
     })
     .catch(error =>{
         console.error(error)
