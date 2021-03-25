@@ -12,6 +12,7 @@
   "dependencies": {
     "@cosmostation/cosmosjs": "^0.9.5",
     "axios": "^0.21.1",
+    "base58": "^2.0.1",
     "bech32": "^2.0.0",
     "eip55": "^2.1.0",
     "web3": "^1.3.4"
