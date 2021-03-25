@@ -39,6 +39,8 @@ const msg = {
 axios.post(queryAPI, msg)
     .then(res=> {
         console.log(res.data.result.Res);
+        const decodedRes = web3.eth.abi.decodeParameter('uint256', res.data.result.Res);
+        console.log(decodedRes);
     })
     .catch(error =>{
         console.error(error)

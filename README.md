@@ -31,11 +31,17 @@ node contract_call_with_params.js
 ```
 
 ## contract query without params
+use web3.eth.abi to decode contract query result, reference:
+https://web3js.readthedocs.io/en/v1.3.4/web3-eth-abi.html#decodeparameters
+
 ``` shell
 node contract_query.js
 ```
 
 ## contract query with params
+use web3.eth.abi to decode contract query result, reference:
+https://web3js.readthedocs.io/en/v1.3.4/web3-eth-abi.html#decodeparameters
+
 ``` shell
 node contract_query_with_params.js
 ```
