@@ -1,9 +1,14 @@
 # dippernetwork js sdk demos
 setup env:
 ``` shell
+# https://docs.dippernetwork.com/get-started/install.html
 dipcli rest-server
 ```
+
 ## send coin
+``` shell
+node send_coin.js
+```
 
 ## contract deploy without params
 ``` shell
